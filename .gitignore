@@ -1,0 +1,22 @@
+# data & model weights — too large / not reproducible-by-git
+data/
+checkpoints/
+*.tar.gz
+*.pt
+*.bin
+*.safetensors
+
+# jupyter
+.ipynb_checkpoints/
+
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# os junk
+.DS_Store
+Thumbs.db
+
+venvp2/
