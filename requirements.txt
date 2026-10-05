@@ -1,0 +1,17 @@
+# CPU: data prep, IBM1 baseline, report, tests
+numpy
+pandas
+tabulate
+nltk>=3.8
+sacrebleu>=2.4,<3        # the bootstrap uses sacrebleu's internal statistics API
+sentencepiece            # spBLEU tokenizer (used by every scoring run, including the CPU-only IBM1 one)
+pytest
+
+# GPU: fine-tuning and evaluation (results were produced on transformers 4.x)
+torch
+transformers>=4.55,<5
+datasets>=2.19
+accelerate
+bitsandbytes
+evaluate                 # BERTScore
+bert_score

@@ -20,3 +20,33 @@ venv/
 Thumbs.db
 
 venvp2/
+notebooks/
+
+
+
+
+# data and weights are never committed
+data/raw/*
+data/processed/*
+models/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# secrets
+.env
+*.token
+
+# python / tooling
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+*.tmp
+
+data/
+models/
+.env
+__pycache__/
+.pytest_cache/
+*.tmp
